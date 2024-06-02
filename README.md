@@ -1,6 +1,6 @@
 # Catalyst Notes
 A simple notes application.
 # Release Goals
-- Undo/Redo Functionality
-- Clean and consise UI
-- Packaging
+- Undo/Redo Functionality (Done)
+- Clean and consise UI (Done)
+- Packaging (Done)
