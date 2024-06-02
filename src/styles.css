@@ -1,0 +1,40 @@
+:root {
+    --bg-primary: #6366f1;
+    --bg-secondary: #4338ca;
+    --foreground: white;
+    --padding: 8pt;
+    --radius: 8pt;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: var(--foreground);
+}
+
+body {
+    background-color: var(--bg-primary);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    margin: 8pt;
+    background-color: var(--bg-secondary);
+    padding: var(--padding);
+    border-radius: var(--radius);
+}
+
+.trix-content {
+    margin: 16pt;
+    outline: 0;
+    height: 85vh;
+}
+
+#footer {
+    padding: 4pt;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--bg-secondary);
+}

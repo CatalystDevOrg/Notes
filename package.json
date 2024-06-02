@@ -1,0 +1,78 @@
+{
+  "name": "catalyst-notes",
+  "version": "0.1.0",
+  "description": "A web browser inspired by Catalyst and FreeCat",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "wp-build": "webpack --mode production",
+    "wp-dev": "webpack --mode development --watch",
+    "dev": "concurrently -k npm:wp-dev npm:start",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdev082/recat.git"
+  },
+  "keywords": [
+    "catalyst",
+    "freecat",
+    "browser",
+    "web"
+  ],
+  "author": "jdev082",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdev082/recat/issues"
+  },
+  "homepage": "https://github.com/jdev082/recat#readme",
+  "dependencies": {
+    "trix": "^2.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "css-loader": "^7.1.1",
+    "electron": "^30.0.2",
+    "electron-builder": "^24.13.3",
+    "electron-reloader": "^1.2.3",
+    "eslint": "^8.57.0",
+    "eslint-webpack-plugin": "^4.1.0",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "build": {
+    "appId": "org.eu.getcatalyst.notes",
+    "publish": [
+        "github"
+    ],
+    "linux": {
+        "icon": "assets/icon.png",
+        "category": "Utility",
+        "maintainer": "CatalystDevOrg",
+        "target": [
+            "AppImage",
+            "deb",
+            "rpm",
+            "tar.gz"
+        ]
+    },
+    "win": {
+        "icon": "assets/icon-scaled.ico",
+        "target": [
+            "portable",
+            "squirrel"
+        ]
+    },
+    "mac": {
+        "icon": "assets/icon-scaled.icns",
+        "target": [
+            "dmg",
+            "zip"
+        ]
+    }
+  }
+}
