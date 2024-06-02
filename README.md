@@ -4,3 +4,4 @@ A simple notes application.
 - Undo/Redo Functionality (Done)
 - Clean and consise UI (Done)
 - Packaging (Done)
+- Save/Load
