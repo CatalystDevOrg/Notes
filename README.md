@@ -5,3 +5,4 @@ A simple notes application.
 - Clean and consise UI (Done)
 - Packaging (Done)
 - Save/Load
+# Contributors
