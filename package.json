@@ -33,7 +33,7 @@
   "devDependencies": {
     "concurrently": "^8.2.2",
     "css-loader": "^7.1.1",
-    "electron": "^30.0.2",
+    "electron": "^31.0.1",
     "electron-builder": "^24.13.3",
     "electron-reloader": "^1.2.3",
     "eslint": "^8.57.0",
